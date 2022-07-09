@@ -86,7 +86,7 @@ describe("Test renderStatsCard", () => {
     const iconClassStyles = stylesObject[":host"][".icon "];
 
     expect(headerClassStyles.fill.trim()).toBe("#2f80ed");
-    expect(statClassStyles.fill.trim()).toBe("#333");
+    expect(statClassStyles.fill.trim()).toBe("#434d58");
     expect(iconClassStyles.fill.trim()).toBe("#4c71f2");
     expect(queryByTestId(document.body, "card-bg")).toHaveAttribute(
       "fill",
@@ -249,7 +249,7 @@ describe("Test renderStatsCard", () => {
       document.querySelector(
         'g[transform="translate(0, 25)"]>.stagger>.stat.bold',
       ).textContent,
-    ).toMatchInlineSnapshot(`"累计提交数（commit） (2021):"`);
+    ).toMatchInlineSnapshot(`"累计提交数（commit） (2022):"`);
     expect(
       document.querySelector(
         'g[transform="translate(0, 50)"]>.stagger>.stat.bold',
