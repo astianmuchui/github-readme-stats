@@ -167,9 +167,11 @@ You can customize the appearance of your `Stats Card` or `Repo Card` however you
 - `bg_color` - Card's background color _(hex color)_ **or** a gradient in the form of _angle,start,end_
 - `hide_border` - Hides the card's border _(boolean)_
 - `theme` - name of the theme, choose from [all available themes](./themes/README.md)
-- `cache_seconds` - set the cache header manually _(min: 1800, max: 86400)_
+- `cache_seconds` - set the cache header manually _(min: 7200, max: 86400)_
 - `locale` - set the language in the card _(e.g. cn, de, es, etc.)_
 - `border_radius` - Corner rounding on the card_
+
+> Note: The minimum of cache_seconds is currently 4 hours as a temporary fix for PATs exhaustion. 
 
 ##### Gradient in bg_color
 
